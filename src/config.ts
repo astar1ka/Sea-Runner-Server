@@ -8,10 +8,17 @@ export default class CONFIG{
     DB_CONNECT = {
 
         HOST: 'localhost',
+<<<<<<< Updated upstream
         PORT: 5433,
         NAME: 'SeaRunner.db',
         USER: 'postgres',
         PASS: '111'
+=======
+        PORT: 5432,
+        NAME: 'SeaRunner',
+        USER: 'm3rcy',
+        PASS: '1337'
+>>>>>>> Stashed changes
     }
 
     public MESSAGES: TNameArray = {
