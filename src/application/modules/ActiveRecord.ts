@@ -3,9 +3,9 @@ import { TAttributes, Tables} from "./Types";
 import DB from "./DB/DB";
 
 export default class ActiveRecord{
-    protected primaryKey = 'id';
+    protected primaryKey = 'id'; 
     protected fields: string [] = [];
-    protected hidden: string [] = [];
+    protected hidden: string [] = []; 
     protected attributes: TAttributes = {};
     constructor(readonly db: DB, readonly table: Tables){
     }
@@ -19,7 +19,7 @@ export default class ActiveRecord{
         return attributes;
     }
 
-    protected reload(attributes: TAttributes){
+    protected rewrite(attributes: TAttributes){
         this.fields.forEach((field: string) => {
             const value = this.get(field);
             this.attributes[field] = attributes[field];
@@ -35,7 +35,7 @@ export default class ActiveRecord{
             const data = await this.db.find(this.table, this.attributes[this.primaryKey]);
             if (data) 
             {
-                this.reload(data);
+                this.rewrite(data);
                 return true;
             };
         }
@@ -45,7 +45,7 @@ export default class ActiveRecord{
     protected async create(data: object): Promise<boolean>{
         const record = await this.db.addRecord(this.table, {...data});
         if (record) {
-            this.reload(record);
+            this.rewrite(record);
             return true;
         }
         return false;
@@ -54,7 +54,7 @@ export default class ActiveRecord{
     protected save(){
         this.db.updateRecord(this.table, this.attributes[this.primaryKey], this.getData());
     }
-
+    
     public getId():number{
         return this.get('id');
     }
