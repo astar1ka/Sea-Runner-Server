@@ -26,9 +26,9 @@
 ```
 Конструктор этого класса принимает два параметра: объект `db`, представляющий экземпляр базы данных, и строку `table`, представляющую имя таблицы, с которой необходимо работать:
 
-    ```typescript
-    constructor(readonly db: DB, readonly table: Tables){}
-    ```    
+```typescript
+constructor(readonly db: DB, readonly table: Tables){}
+```    
 
 2. Метод getData.
 
