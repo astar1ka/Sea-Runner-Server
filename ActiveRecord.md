@@ -10,19 +10,18 @@
 Свойство `primaryKey` устанавливает имя первичного ключа таблицы:
 
 ```typescript
-    protected primaryKey = 'id';
-
+protected primaryKey = 'id';
 ```
 Свойство `fields` содержит список имен полей таблицы, а свойство `hidden` содержит список имен полей, которые нужно скрыть при выводе данных:
 
 ```typescript
-    protected fields: string [] = [];
+protected fields: string [] = [];
 ```
 
 Свойство `attributes` содержит атрибуты записи, которые могут быть изменены:
 
 ```typescript
-    protected hidden: string [] = [];
+protected hidden: string [] = [];
 ```
 Конструктор этого класса принимает два параметра: объект `db`, представляющий экземпляр базы данных, и строку `table`, представляющую имя таблицы, с которой необходимо работать:
 
