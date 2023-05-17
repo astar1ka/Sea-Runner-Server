@@ -1,19 +1,7 @@
 import DB from "../../../application/modules/DB/DB";
 import { Tables } from "../../../application/modules/Types";
 import CONFIG from "../../../config";
-import { Client } from 'pg';
 
-const DB_forTest = new Client ({
-    host: 'localhost',
-    port: 5432,
-    database: 'searunner',
-    user: 'postgres',
-    password: '111'
-});
-
-(async () => {
-    await DB_forTest.connect();
-})();
 
 function randomString(i: number) {
     var rnd = '';
@@ -44,7 +32,7 @@ describe('addRecord', ()=> {
               name: name
             }));
         (async ()=> {
-            await DB_forTest.query(`DELETE FROM users WHERE login = '${login}'`);
+            await db.deleteUsers(Tables.users, {login: login})
         })();
     });
 });

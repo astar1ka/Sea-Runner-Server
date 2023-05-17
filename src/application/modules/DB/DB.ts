@@ -56,6 +56,10 @@ export default class DB {
         return await this.orm.insert(table, [{ ...data }]).run();
     }
 
+    public async getIds(table: Tables) {
+        return await this.orm.select(table, 'id').run();
+    }
+
     ////////////////////////////
     //////////USER//////////////
     ////////////////////////////
@@ -75,6 +79,10 @@ export default class DB {
 
     public async updateUser(id: number, field: object) {
         //return this.orm.update('users', id, field);
+    }
+
+    public deleteUsers(table: Tables, conditions: object) {
+        return this.orm.delete(table).where(conditions).run();
     }
 
     ////////////////////////////
