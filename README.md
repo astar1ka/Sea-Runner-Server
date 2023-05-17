@@ -22,9 +22,9 @@
 
 3. Всё, мы клонировали репозиторий, затем нам нужно создать новую ветку для своих отдельных работ. Делать это нужно в GitHub Desktop добавить новую ветку для самих себя, делается это тут
 
-  1. ![image](https://github.com/astar1ka/Sea-Runner-Server/assets/90634514/1d890327-8dba-4aa9-bed9-49027babce3e)
+  а) ![image](https://github.com/astar1ka/Sea-Runner-Server/assets/90634514/1d890327-8dba-4aa9-bed9-49027babce3e)
 
-  2. ![image](https://github.com/astar1ka/Sea-Runner-Server/assets/90634514/085bad91-6809-447f-ba99-a351127b8646)
+  б) ![image](https://github.com/astar1ka/Sea-Runner-Server/assets/90634514/085bad91-6809-447f-ba99-a351127b8646)
 
 4. Затем мы должны создать нашу ветку от ветки dev, делается это так
   
