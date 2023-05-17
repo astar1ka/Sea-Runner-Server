@@ -28,7 +28,13 @@
 
 4. Затем мы должны создать нашу ветку от ветки dev, делается это так
   
-  ![image](https://github.com/astar1ka/Sea-Runner-Server/assets/90634514/5101f803-c96f-4448-8a0b-3a673fd33eaf)
+  ![image](https://github.com/astar1ka/Sea-Runner-Server/assets/90634514/a9a6aff7-be01-4c14-8a5a-4a89a33503dd)
+  
+  ![image](https://github.com/astar1ka/Sea-Runner-Server/assets/90634514/4fef1f76-e7c5-43c9-a431-dac905a733e1)
 
  5. Всё, мы создали новую ветку для самих себя и пришло время для работы.
 
+
+# УСТАНОВКА ВСЕХ ЗАВИСИМОСТЕЙ ДЛЯ РАБОТЫ #
+
+1. Первым делом нужно 
